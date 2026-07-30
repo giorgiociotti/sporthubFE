@@ -6,14 +6,15 @@
 <title>Accedi — Sporthub</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="login.css">
+<!-- Percorso CSS corretto per risalire alla root -->
+<link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
 <header>
   <div class="nav-row wrap">
-    <a href="index.html" class="logo"><span class="dot"></span>Sporthub</a>
-    <a href="index.html" class="btn btn-ghost">← Torna alla home</a>
+    <a href="../index.html" class="logo"><span class="dot"></span>Sporthub</a>
+    <a href="../index.html" class="btn btn-ghost">← Torna alla home</a>
   </div>
 </header>
 
@@ -25,20 +26,20 @@
 
   <div class="wrap auth-wrap">
     <div class="auth-card">
-      <img src="res/logo.png" alt="Sporthub" class="auth-logo">
+      <img src="../res/logo.png" alt="Sporthub" class="auth-logo">
 
       <span class="eyebrow">Bentornato</span>
-      <h1>Insert your credentials...</h1>
+      <h1>Accedi al tuo account</h1>
       <p class="auth-sub">Accedi al tuo account per continuare ad allenarti con la community.</p>
 
       <form class="auth-form" id="loginForm">
         <div class="form-group">
-          <label for="email">Email...</label>
+          <label for="email">Email</label>
           <input type="email" id="email" name="email" placeholder="nome@esempio.it" required autocomplete="email">
         </div>
 
         <div class="form-group">
-          <label for="password">Password...</label>
+          <label for="password">Password</label>
           <div class="password-wrap">
             <input type="password" id="password" name="password" placeholder="••••••••" required autocomplete="current-password">
             <button type="button" class="toggle-pw" id="togglePw" aria-label="Mostra password">👁</button>
@@ -80,9 +81,9 @@
       <div>
         <h4>Link rapidi</h4>
         <ul>
-          <li><a href="index.html#negozio">Negozio</a></li>
-          <li><a href="index.html#hub">Hub</a></li>
-          <li><a href="index.html#help">Help</a></li>
+          <li><a href="../index.html#negozio">Negozio</a></li>
+          <li><a href="../index.html#hub">Hub</a></li>
+          <li><a href="../index.html#help">Help</a></li>
           <li><a href="login.html">Accedi</a></li>
         </ul>
       </div>
@@ -94,6 +95,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
