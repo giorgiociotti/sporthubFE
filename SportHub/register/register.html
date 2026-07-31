@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrati — Sporthub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-row wrap">
+    <a href="/" class="logo"><span class="dot"></span>Sporthub</a>
+    <a href="/" class="btn btn-ghost">← Torna alla home</a>
+  </div>
+</header>
+
+<section class="auth-section">
+  <svg class="hero-lanes-bg" viewBox="0 0 1200 700" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M -100 120 L 260 120 L 400 40 L 520 210 L 660 120 L 1300 120" stroke="#2d5a3d" stroke-width="4" fill="none" opacity="0.12"/>
+    <path d="M -100 540 L 280 540 L 420 470 L 540 610 L 690 540 L 1300 540" stroke="#7cb342" stroke-width="3" fill="none" opacity="0.12"/>
+  </svg>
+
+  <div class="wrap auth-wrap">
+    <div class="auth-card auth-card-wide">
+      <div class="auth-avatar">
+        <span>👤</span>
+      </div>
+
+      <span class="eyebrow">Unisciti alla community</span>
+      <h1>Crea il tuo account</h1>
+      <p class="auth-sub">Bastano pochi dati per iniziare ad allenarti con Sporthub.</p>
+
+      <!-- Form HTML Standard: invia una richiesta POST a /register -->
+      <form class="auth-form" id="signupForm" action="/register" method="POST">
+        
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Il tuo nome" required autocomplete="given-name">
+          </div>
+          <div class="form-group">
+            <label for="surname">Cognome</label>
+            <input type="text" id="surname" name="surname" placeholder="Il tuo cognome" required autocomplete="family-name">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="signupEmail">Email</label>
+          <input type="email" id="signupEmail" name="email" placeholder="nome@esempio.it" required autocomplete="email">
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="dob">Data di Nascita</label>
+            <input type="date" id="dob" name="dob" required autocomplete="bday">
+          </div>
+          <div class="form-group">
+            <label for="gender">Genere</label>
+            <select id="gender" name="gender" required>
+              <option value="" disabled selected>Seleziona</option>
+              <option value="donna">Donna</option>
+              <option value="uomo">Uomo</option>
+              <option value="altro">Altro / preferisco non specificare</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="signupPassword">Password</label>
+          <div class="password-wrap">
+            <input type="password" id="signupPassword" name="password" placeholder="••••••••" required autocomplete="new-password">
+            <button type="button" class="toggle-pw" id="togglePwSignup" aria-label="Mostra password">👁</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="repeatPassword">Conferma Password</label>
+          <div class="password-wrap">
+            <input type="password" id="repeatPassword" name="repeatPassword" placeholder="••••••••" required autocomplete="new-password">
+            <button type="button" class="toggle-pw" id="togglePwRepeat" aria-label="Mostra password">👁</button>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+      </form>
+
+      <div class="auth-divider"><span>oppure</span></div>
+
+      <!-- Collegamento alla pagina di login -->
+      <p class="auth-switch">Hai già un account? <a href="/login" class="link-strong">Accedi</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <h4>Sporthub</h4>
+        <p>Il negozio sportivo pensato per chi lo sport lo vive ogni giorno, dentro e fuori dal campo.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <ul>
+          <li>info@sporthub.it</li>
+          <li>+39 0881 000 000</li>
+          <li>Via dello Stadio 12, San Severo (FG)</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Link rapidi</h4>
+        <ul>
+          <li><a href="/#negozio">Negozio</a></li>
+          <li><a href="/#hub">Hub</a></li>
+          <li><a href="/#help">Help</a></li>
+          <li><a href="/login">Accedi</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Sporthub — Tutti i diritti riservati</span>
+      <span>Registrazione — v1</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
