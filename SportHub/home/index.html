@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sporthub sport equipment</title>
+  <title>Sporthub Sports Equipment</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
     href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap"
@@ -19,17 +19,17 @@
       <a href="#" class="logo"><span class="dot"></span>Sporthub</a>
 
       <nav class="lanes" id="mainNav">
-        <a href="#negozio"><span class="lane-no">1</span>Negozio</a>
+        <a href="#negozio"><span class="lane-no">1</span>Store</a>
         <a href="#hub"><span class="lane-no">2</span>Hub</a>
         <a href="#help"><span class="lane-no">3</span>Help</a>
         <a href="SportHub\login\login.html" class="btn btn-primary nav-cta-mobile" style="display:none;">Login</a>
-        <a href="SportHub\register\register.html" class="btn btn-primary nav-cta-mobile" style="display:none;">signup</a>
+        <a href="SportHub\register\register.html" class="btn btn-primary nav-cta-mobile" style="display:none;">Sign Up</a>
       </nav>
 
       <div style="display:flex; align-items:center; gap:10px;">
         <a href="SportHub\login\login.html" class="btn btn-primary nav-cta">Login</a>
-        <a href="SportHub\register\register.html" class="btn btn-primary nav-cta">signup</a>
-        <button class="mobile-toggle" id="navToggle" aria-label="Apri il menu" aria-expanded="false">☰</button>
+        <a href="SportHub\register\register.html" class="btn btn-primary nav-cta">Sign Up</a>
+        <button class="mobile-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
       </div>
     </div>
   </header>
@@ -46,25 +46,30 @@
 
     <div class="wrap hero-inner">
       <div>
-        <span class="eyebrow">Negozio &amp; community sportiva</span>
-        <h1>SPORTHUB<br><span>al tuo ritmo.</span></h1>
-        <p class="lead">Benvenuto su SportHub, il luogo in cui la passione per lo sport incontra l'innovazione.<br><br>
-          SportHub è un negozio online dedicato agli articoli sportivi, pensato per offrire prodotti di qualità per ogni
-          disciplina e livello di esperienza. Ma non ci fermiamo alla vendita: crediamo che lo sport sia anche
-          condivisione, collaborazione e divertimento.<br><br>
-          Per questo abbiamo creato una sezione social che permette ai nostri utenti di organizzare eventi sportivi,
-          partecipare ad attività, conoscere nuovi compagni di allenamento e creare una vera community di
-          appassionati.<br><br>
-          Che tu stia cercando l'attrezzatura perfetta o voglia vivere lo sport insieme ad altri, SportHub è il posto
-          giusto per te.</p>
+        <span class="eyebrow">Sports Store &amp; Community</span>
+        <h1>SPORTHUB<br><span>At your own pace.</span></h1>
+
+        <p class="lead">
+          Welcome to SportHub, where the passion for sports meets innovation.<br><br>
+          SportHub is an online platform dedicated to sports, designed to bring together people of all
+          disciplines and experience levels. But we go beyond sports: we believe that sports are also about
+          sharing, collaboration, and having fun.<br><br>
+          That's why we created a social section where our users can organize sports events,
+          join activities, meet new training partners, and build a real community of
+          sports enthusiasts.<br><br>
+          Whether you're looking for the perfect equipment or want to enjoy sports with others, SportHub is the
+          right place for you.
+        </p>
+
         <div class="hero-ctas">
-          <a href="#negozio" class="btn btn-primary">Entra nel negozio</a>
-          <a href="#hub" class="btn btn-primary">Scopri la community</a>
+          <a href="#negozio" class="btn btn-primary">Enter the Store</a>
+          <a href="#hub" class="btn btn-primary">Discover the Community</a>
         </div>
+
         <div class="starting-blocks">
-          <span><strong>+120</strong> prodotti in catalogo</span>
-          <span><strong>3</strong> corsie: negozio, hub, assistenza</span>
-          <span><strong>24/7</strong> supporto community</span>
+          <span><strong>+120</strong> products in our catalog</span>
+          <span><strong>3</strong> sections: store, hub, support</span>
+          <span><strong>24/7</strong> community support</span>
         </div>
       </div>
 
@@ -77,125 +82,155 @@
   <section class="carousel-section wrap" aria-labelledby="prodTitle">
     <div class="section-head">
       <div>
-        <span class="eyebrow">In vetrina</span>
-        <h2 id="prodTitle">Anteprima prodotti</h2>
+        <span class="eyebrow">Featured</span>
+        <h2 id="prodTitle">Product Preview</h2>
       </div>
+
       <div class="carousel-controls">
-        <button id="prevBtn" aria-label="Prodotto precedente">←</button>
-        <button id="nextBtn" aria-label="Prodotto successivo">→</button>
+        <button id="prevBtn" aria-label="Previous product">←</button>
+        <button id="nextBtn" aria-label="Next product">→</button>
       </div>
     </div>
 
     <div class="carousel-track" id="carouselTrack">
+
       <article class="prod-card">
-        <div class="prod-img">Immagine prodotto</div>
+        <div class="prod-img">Product image</div>
         <div class="prod-body">
-          <span class="cat">Ciclismo</span>
-          <h3>Bicicletta da corsa Aria 2</h3>
-          <span class="price">€ 899,00</span>
+          <span class="cat">Cycling</span>
+          <h3>Aria 2 Road Bike</h3>
+          <span class="price">€ 899.00</span>
         </div>
       </article>
+
       <article class="prod-card">
-        <div class="prod-img">Immagine prodotto</div>
+        <div class="prod-img">Product image</div>
         <div class="prod-body">
           <span class="cat">Running</span>
-          <h3>Scarpe da corsa Lightfoot</h3>
-          <span class="price">€ 119,00</span>
+          <h3>Lightfoot Running Shoes</h3>
+          <span class="price">€ 119.00</span>
         </div>
       </article>
+
       <article class="prod-card">
-        <div class="prod-img">Immagine prodotto</div>
+        <div class="prod-img">Product image</div>
         <div class="prod-body">
-          <span class="cat">Abbigliamento</span>
-          <h3>Maglietta tecnica Team</h3>
-          <span class="price">€ 34,00</span>
+          <span class="cat">Apparel</span>
+          <h3>Team Performance T-Shirt</h3>
+          <span class="price">€ 34.00</span>
         </div>
       </article>
+
       <article class="prod-card">
-        <div class="prod-img">Immagine prodotto</div>
+        <div class="prod-img">Product image</div>
         <div class="prod-body">
-          <span class="cat">Nuoto</span>
-          <h3>Costume gara Ripple</h3>
-          <span class="price">€ 59,00</span>
+          <span class="cat">Swimming</span>
+          <h3>Ripple Competition Swimsuit</h3>
+          <span class="price">€ 59.00</span>
         </div>
       </article>
+
       <article class="prod-card">
-        <div class="prod-img">Immagine prodotto</div>
+        <div class="prod-img">Product image</div>
         <div class="prod-body">
           <span class="cat">Fitness</span>
-          <h3>Kit elastici Resist</h3>
-          <span class="price">€ 24,00</span>
+          <h3>Resist Resistance Band Kit</h3>
+          <span class="price">€ 24.00</span>
         </div>
       </article>
+
     </div>
   </section>
 
   <section class="lanes-section">
     <div class="wrap">
+
       <div class="section-head">
         <div>
-          <span class="eyebrow" style="color:var(--leaf);">Tre corsie, una pista</span>
-          <h2>Cosa trovi qui</h2>
-          <p>Ogni corsia ha il suo scopo: acquista l'attrezzatura giusta, confrontati con altri appassionati, oppure
-            chiedi aiuto al nostro staff.</p>
+          <span class="eyebrow" style="color:var(--leaf);">Three sections, one platform</span>
+          <h2>What You'll Find Here</h2>
+          <p>
+            Each section has its own purpose: buy the right equipment, connect with other sports enthusiasts,
+            or get help from our support team.
+          </p>
         </div>
       </div>
 
       <div class="lane-grid">
+
         <div class="lane-card" id="negozio">
-          <span class="lane-tag">Corsia 1</span>
-          <div class="lane-img">img</div>
-          <h3>Negozio</h3>
-          <p>Tutta l'attrezzatura sportiva di cui hai bisogno, selezionata per qualità e prestazioni. Sfoglia le
-            categorie e trova il prodotto giusto per il tuo sport.</p>
+          <span class="lane-tag">Section 1</span>
+          <div class="lane-img">Image</div>
+          <h3>Store</h3>
+          <p>
+            All the sports equipment you need, selected for quality and performance.
+            Browse our categories and find the right products for your sport.
+          </p>
         </div>
+
         <div class="lane-card" id="hub">
-          <span class="lane-tag">Corsia 2</span>
-          <div class="lane-img">img</div>
+          <span class="lane-tag">Section 2</span>
+          <div class="lane-img">Image</div>
           <h3>Hub</h3>
-          <p>Lo spazio della community: racconta i tuoi eventi, scopri quelli organizzati da altri e confrontati con chi
-            condivide la tua passione per lo sport.</p>
+          <p>
+            The heart of the community: share your events, discover activities organized by others,
+            and connect with people who share your passion for sports.
+          </p>
         </div>
+
         <div class="lane-card" id="help">
-          <span class="lane-tag">Corsia 3</span>
-          <div class="lane-img">img</div>
+          <span class="lane-tag">Section 3</span>
+          <div class="lane-img">Image</div>
           <h3>Help</h3>
-          <p>Hai un dubbio su un ordine o un problema con il sito? Scrivi alla nostra segreteria: ti rispondiamo il
-            prima possibile.</p>
+          <p>
+            Have a question about an order or a problem with the website?
+            Contact our support team and we'll get back to you as soon as possible.
+          </p>
         </div>
+
       </div>
     </div>
   </section>
 
   <footer>
     <div class="wrap">
+
       <div class="footer-grid">
+
         <div>
           <h4>Sporthub</h4>
-          <p>Il negozio sportivo pensato per chi lo sport lo vive ogni giorno, dentro e fuori dal campo.</p>
+          <p>
+            The sports store and community designed for people who live and breathe sports,
+            both on and off the field.
+          </p>
         </div>
+
         <div>
-          <h4>Contatti</h4>
+          <h4>Contact Us</h4>
           <ul>
             <li>info@sporthub.it</li>
             <li>+39 0881 000 000</li>
             <li>Via dello Stadio 12, San Severo (FG)</li>
           </ul>
         </div>
+
         <div>
-          <h4>Link rapidi</h4>
+          <h4>Quick Links</h4>
           <ul>
-            <li><a href="#negozio">Negozio</a></li>
+            <li><a href="#negozio">Store</a></li>
             <li><a href="#hub">Hub</a></li>
             <li><a href="#help">Help</a></li>
-            <li><a href="login/login.html">Accedi</a></li>
+            <li><a href="login/login.html">Log In</a></li>
           </ul>
         </div>
+
       </div>
+
       <div class="footer-bottom">
-        <span>© 2026 Sporthub — Tutti i diritti riservati al team 5</span>
-        <span>Home page — v1</span>
+        <span>© 2026 Sporthub — All rights reserved by Team 5</span>
+        <span>Home Page — v1</span>
       </div>
+
     </div>
   </footer>
 
