@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registrati — Sporthub</title>
+  <title>Sign Up — Sporthub</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
@@ -13,7 +13,7 @@
 <header>
   <div class="nav-row wrap">
     <a href="/" class="logo"><span class="dot"></span>Sporthub</a>
-    <a href="/" class="btn btn-ghost">← Torna alla home</a>
+    <a href="/" class="btn btn-ghost">← Back to Home</a>
   </div>
 </header>
 
@@ -29,41 +29,43 @@
         <span>👤</span>
       </div>
 
-      <span class="eyebrow">Unisciti alla community</span>
-      <h1>Crea il tuo account</h1>
-      <p class="auth-sub">Bastano pochi dati per iniziare ad allenarti con Sporthub.</p>
+      <span class="eyebrow">Join the Community</span>
+      <h1>Create Your Account</h1>
+      <p class="auth-sub">Just a few details and you'll be ready to start your Sporthub journey.</p>
 
-      <!-- Form HTML Standard: invia una richiesta POST a /register -->
+      <!-- Standard HTML Form: sends a POST request to /register -->
       <form class="auth-form" id="signupForm" action="/register" method="POST">
         
         <div class="form-row-2">
           <div class="form-group">
-            <label for="name">Nome</label>
-            <input type="text" id="name" name="name" placeholder="Il tuo nome" required autocomplete="given-name">
+            <label for="name">First Name</label>
+            <input type="text" id="name" name="name" placeholder="Your first name" required autocomplete="given-name">
           </div>
+
           <div class="form-group">
-            <label for="surname">Cognome</label>
-            <input type="text" id="surname" name="surname" placeholder="Il tuo cognome" required autocomplete="family-name">
+            <label for="surname">Last Name</label>
+            <input type="text" id="surname" name="surname" placeholder="Your last name" required autocomplete="family-name">
           </div>
         </div>
 
         <div class="form-group">
           <label for="signupEmail">Email</label>
-          <input type="email" id="signupEmail" name="email" placeholder="nome@esempio.it" required autocomplete="email">
+          <input type="email" id="signupEmail" name="email" placeholder="name@example.com" required autocomplete="email">
         </div>
 
         <div class="form-row-2">
           <div class="form-group">
-            <label for="dob">Data di Nascita</label>
+            <label for="dob">Date of Birth</label>
             <input type="date" id="dob" name="dob" required autocomplete="bday">
           </div>
+
           <div class="form-group">
-            <label for="gender">Genere</label>
+            <label for="gender">Gender</label>
             <select id="gender" name="gender" required>
-              <option value="" disabled selected>Seleziona</option>
-              <option value="donna">Donna</option>
-              <option value="uomo">Uomo</option>
-              <option value="altro">Altro / preferisco non specificare</option>
+              <option value="" disabled selected>Select</option>
+              <option value="donna">Female</option>
+              <option value="uomo">Male</option>
+              <option value="altro">Other / Prefer not to say</option>
             </select>
           </div>
         </div>
@@ -72,25 +74,25 @@
           <label for="signupPassword">Password</label>
           <div class="password-wrap">
             <input type="password" id="signupPassword" name="password" placeholder="••••••••" required autocomplete="new-password">
-            <button type="button" class="toggle-pw" id="togglePwSignup" aria-label="Mostra password">👁</button>
+            <button type="button" class="toggle-pw" id="togglePwSignup" aria-label="Show password">👁</button>
           </div>
         </div>
 
         <div class="form-group">
-          <label for="repeatPassword">Conferma Password</label>
+          <label for="repeatPassword">Confirm Password</label>
           <div class="password-wrap">
             <input type="password" id="repeatPassword" name="repeatPassword" placeholder="••••••••" required autocomplete="new-password">
-            <button type="button" class="toggle-pw" id="togglePwRepeat" aria-label="Mostra password">👁</button>
+            <button type="button" class="toggle-pw" id="togglePwRepeat" aria-label="Show password">👁</button>
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+        <button type="submit" class="btn btn-primary btn-block">Sign Up</button>
       </form>
 
-      <div class="auth-divider"><span>oppure</span></div>
+      <div class="auth-divider"><span>or</span></div>
 
-      <!-- Collegamento alla pagina di login -->
-      <p class="auth-switch">Hai già un account? <a href="/login" class="link-strong">Accedi</a></p>
+      <!-- Link to the login page -->
+      <p class="auth-switch">Already have an account? <a href="/login" class="link-strong">Log In</a></p>
     </div>
   </div>
 </section>
@@ -98,31 +100,36 @@
 <footer>
   <div class="wrap">
     <div class="footer-grid">
+
       <div>
         <h4>Sporthub</h4>
-        <p>Il negozio sportivo pensato per chi lo sport lo vive ogni giorno, dentro e fuori dal campo.</p>
+        <p>The sports store and community designed for people who live and breathe sports, both on and off the field.</p>
       </div>
+
       <div>
-        <h4>Contatti</h4>
+        <h4>Contact Us</h4>
         <ul>
           <li>info@sporthub.it</li>
           <li>+39 0881 000 000</li>
           <li>Via dello Stadio 12, San Severo (FG)</li>
         </ul>
       </div>
+
       <div>
-        <h4>Link rapidi</h4>
+        <h4>Quick Links</h4>
         <ul>
-          <li><a href="/#negozio">Negozio</a></li>
+          <li><a href="/#negozio">Store</a></li>
           <li><a href="/#hub">Hub</a></li>
           <li><a href="/#help">Help</a></li>
-          <li><a href="/login">Accedi</a></li>
+          <li><a href="/login">Log In</a></li>
         </ul>
       </div>
+
     </div>
+
     <div class="footer-bottom">
-      <span>© 2026 Sporthub — Tutti i diritti riservati</span>
-      <span>Registrazione — v1</span>
+      <span>© 2026 Sporthub — All rights reserved</span>
+      <span>Registration — v1</span>
     </div>
   </div>
 </footer>
